@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="common.DotTestListener"/>
+  </listeners>
+  <test name="Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Article.TC_001_ArticleHandle"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Article.TC_001_ArticleHandle">
+        <methods>
+          <include name="TC_003_Publish_An_Article"/>
+          <include name="TC_005_Move_An_Weblink_To_Archive"/>
+          <include name="TC_001_Create_Article_With_Valid_Data"/>
+          <include name="TC_002_Edit_Article"/>
+          <include name="TC_004_Unpublish_An_Weblink"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Article.TC_001_ArticleHandle -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
