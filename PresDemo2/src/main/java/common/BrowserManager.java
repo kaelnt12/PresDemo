@@ -83,16 +83,16 @@ public class BrowserManager{
 	}
 
 	public void startChromeDriver() {
-		System.setProperty("webdriver.chrome.driver", "..\\PresDemo\\src\\test\\resources\\chromedriver228.exe");
+		System.setProperty("webdriver.chrome.driver", "..\\PresDemo2\\src\\test\\resources\\chromedriver228.exe");
 	}
 
 	public void startIEDriver() {
-		System.setProperty("webdriver.ie.driver", "..\\PresDemo\\src\\test\\resources\\IEDriverServer.exe");
+		System.setProperty("webdriver.ie.driver", "..\\PresDemo2\\src\\test\\resources\\IEDriverServer.exe");
 	}
 	
 
 	public void startFFDriver() {
-		System.setProperty("webdriver.gecko.driver", "..\\PresDemo\\src\\test\\resources\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "..\\PresDemo2\\src\\test\\resources\\geckodriver.exe");
 	}
 
 	public void closeBrowser() {
